@@ -423,6 +423,11 @@ function speakThis(message) {
         window.open(`https://www.amazon.in/s?k=${message.replace("amazon", "")}`, "_blank");
         const finalText = "This is what i found on amazon regarding " + message;
         speech.text = finalText;
+        
+    } else if (message.includes('calculate')|| message.includes("add")|| message.includes("multiply")) {
+        window.open(`https://www.google.com/search?q=${message.replace("calculate", "")}`, "_blank");
+        const finalText = "This is the answer of" + message;
+        speech.text = finalText;
 
 ////////////////////////////////////////////////////WIKIPEDIA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
