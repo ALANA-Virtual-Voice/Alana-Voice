@@ -416,8 +416,8 @@ function speakThis(message) {
         const finalText = "This is the answer of" + message;
         speech.text = finalText;
 
-    } else if (message.includes('weather')|| message.includes("climate")|| message.includes(" day ")) {
-        window.open(`https://www.google.com/search?q=${message.replace(" ","")}`, "_blank");
+    } else if (message.includes('weather')|| message.includes("climate")) {
+        window.open(`https://www.google.com/search?q=${message.replace("   ","")}`, "_blank");
         const finalText = "today's" + message;
         speech.text = finalText;
 
