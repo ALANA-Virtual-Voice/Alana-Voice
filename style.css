@@ -8,14 +8,14 @@
 }
 
 body {
-    background: #000000;
+    background: #1e1e1e;
 }
 
 .main {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background: linear-gradient(180deg, #131313 0%, #000000 100%);
+    background: linear-gradient(180deg, #00b8e6 0%, #002f66 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ body {
 }
 
 .main .image-container h1 {
-    color: #00e6ff;
+    color: #00ffb8;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
@@ -105,11 +105,11 @@ body {
 
 .main .input .talk i {
     font-size: 20px;
-    color: #00e6ff;
+    color: #00ffb8;
 }
 
 .main .input .content {
-    color: #00e6ff;
+    color: #00ffb8;
     font-size: 15px;
     margin-right: 20px;
     position: relative;
@@ -136,7 +136,7 @@ body {
 }
 
 .main .input .content button {
-    background: #00e6ff;
+    background: #00ffb8;
     color: #111111;
     border: none;
     padding: 8px 20px;
@@ -147,5 +147,5 @@ body {
 }
 
 .main .input .content button:hover {
-    background: #00b3e6;
+    background: #00e6a3;
 }
