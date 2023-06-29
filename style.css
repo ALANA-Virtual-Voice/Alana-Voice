@@ -7,15 +7,31 @@
     font-family: "Roboto Mono", monospace;
 }
 
+body {
+    background: #000000;
+}
+
 .main {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background: #000000;
+    background: linear-gradient(180deg, #131313 0%, #000000 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/carbon_fibre.png");
+    opacity: 0.1;
+    pointer-events: none;
 }
 
 .main .image-container {
@@ -35,16 +51,18 @@
 }
 
 .main .image-container h1 {
-    color: #00bcd4;
+    color: #00e6ff;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .main .image-container p {
     color: #ffffff;
     text-align: center;
     margin-bottom: 40px;
+    font-size: 18px;
 }
 
 .main .input {
@@ -53,8 +71,22 @@
     align-items: center;
     width: 40vw;
     height: 50px;
-    border-radius: 20px;
-    background: rgb(0, 0, 0);
+    border-radius: 25px;
+    background: #111111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.main .input::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
 }
 
 .main .input .talk {
@@ -68,15 +100,52 @@
     align-items: center;
     font-size: 15px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .main .input .talk i {
     font-size: 20px;
-    color: #00bcd4;
+    color: #00e6ff;
 }
 
 .main .input .content {
-    color: #00bcd4;
+    color: #00e6ff;
     font-size: 15px;
     margin-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.main .input .content input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.main .input .content input::placeholder {
+    color: #666666;
+}
+
+.main .input .content input:focus {
+    border: none;
+    outline: none;
+}
+
+.main .input .content button {
+    background: #00e6ff;
+    color: #111111;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.main .input .content button:hover {
+    background: #00b3e6;
 }
